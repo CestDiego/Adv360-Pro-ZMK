@@ -1,0 +1,119 @@
+#+title: Adv360
+
+
+We are doing an org-src stuff
+
+#+begin_src
+
+#+end_src
+
+
+#+NAME: DEFAULT_LAYER_L
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp GRAVE     | &kp N1    | &kp N2   | &kp N3        | &kp N4         | &kp N5 |   | &tog 1    |   |           |          |
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W    | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S    | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X    | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mo 2         | &kp EQUAL | &kp CAPS | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
+|---------------+-----------+----------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+
+
+#+NAME: DEFAULT_LAYER_R
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+|           |           | &mo 3     | &kp N6 | &kp N7         | &kp N8         | &kp N9   | &kp N0   | &kp BSPC  |
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+|           |           | &none     | &kp Y  | &kp U          | &kp I          | &kp O    | &kp P    | &kp BSLH  |
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+| &kp LGUI  | &kp RCTRL | &none     | &kp H  | &kp J          | &kp K          | &kp L    | &kp SEMI | &kp SQT   |
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+| &kp PG_UP | &none     | &none     | &kp N  | &kp M          | &kp COMMA      | &kp DOT  | &kp FSLH | &kp RSHFT |
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+| &kp PG_DN | &kp ENTER | &kp SPACE |        | &mt RCMD MINUS | &mt RALT EQUAL | &kp LBKT | &kp RBKT | &mo 2     |
+|-----------+-----------+-----------+--------+----------------+----------------+----------+----------+-----------|
+
+
+#+NAME: LAYER_BUILDER
+#+begin_src python :var left=DEFAULT_LAYER_L :var right=DEFAULT_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else []
+    row = pair[0] + extra_none + pair[1]
+    result.append(' '.join(row))
+
+print("\n".join(result))
+#+end_src
+
+#+RESULTS: LAYER_BUILDER
+: &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &tog 1      &mo 3 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+: &kp TAB &kp Q &kp W &kp E &kp R &kp T  &none      &none &kp Y &kp U &kp I &kp O &kp P &kp BSLH
+: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G  &none  &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL &none &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
+: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &none  &none &kp HOME &none &none &kp PG_UP &none &none &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+: &mo 2 &kp EQUAL &kp CAPS &mt LALT LEFT &mt LCMD RIGHT   &kp SPACE  &kp BSPC &kp END &kp PG_DN &kp ENTER &kp SPACE  &mt RCMD MINUS &mt RALT EQUAL &kp LBKT &kp RBKT &mo 2
+
+#+RESULTS:
+: &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &tog 1     &mo 3 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+: &kp TAB &kp Q &kp W &kp E &kp R &kp T &none     &none &kp Y &kp U &kp I &kp O &kp P &kp BSLH
+: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G &none &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL &none &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
+: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &none &none &kp HOME &none &none &kp PG_UP &none &none &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+: &mo 2 &kp EQUAL &kp CAPS &mt LALT LEFT &mt LCMD RIGHT  &kp BSPC &kp DEL &kp END &kp PG_DN &kp ENTER &kp SPACE  &mt RCMD MINUS &mt RALT EQUAL &kp LBKT &kp RBKT &mo 2
+: ['&kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &tog 1     &mo 3 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC', '&kp TAB &kp Q &kp W &kp E &kp R &kp T &none     &none &kp Y &kp U &kp I &kp O &kp P &kp BSLH', '&mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G &none &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL &none &kp H &kp J &kp K &kp L &kp SEMI &kp SQT', '&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &none &none &kp HOME &none &none &kp PG_UP &none &none &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT', '&mo 2 &kp EQUAL &kp CAPS &mt LALT LEFT &mt LCMD RIGHT  &kp BSPC &kp DEL &kp END &kp PG_DN &kp ENTER &kp SPACE  &mt RCMD MINUS &mt RALT EQUAL &kp LBKT &kp RBKT &mo 2']
+
+
+#+begin_src text :var lefty=DEFAULT_LAYER_R :var righty=DEFAULT_LAYER_L :noweb yes :tangle yes
+
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+
+/* THIS FILE WAS GENERATED!
+ *
+ * This file was generated automatically. You may or may not want to
+ * edit it directly.
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/backlight.h>
+
+
+#define BASE 1
+#define SYMBOLS 2
+#define MEDIA 3
+
+/ {
+  behaviors {
+    #include "macros.dtsi"
+
+    hm: homerow_mods {
+        compatible = "zmk,behavior-hold-tap";
+        label = "HOMEROW_MODS";
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        quick_tap_ms = <175>;
+        flavor = "tap-preferred";
+        bindings = <&kp>, <&kp>;
+    };
+  };
+
+  keymap {
+    compatible = "zmk,keymap";
+    default_layer {
+      bindings = <
+        <<LAYER_BUILDER()>>
+        >;
+      };
+    };
+  };
+#+end_src
+
+#+RESULTS:
