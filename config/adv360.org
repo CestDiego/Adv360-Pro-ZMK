@@ -20,17 +20,17 @@ We are doing an org-src stuff
 
 
 #+NAME: DEFAULT_LAYER_R
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
 |           |           |   | &mo CONFIG |   | &kp N6 | &kp N7         | &kp N8         | &kp N9   | &kp N0         | &kp BSPC  |
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
-|           |           |   | &none     |   | &kp Y  | &kp U          | &kp I          | &kp O    | &kp P          | &kp BSLH  |
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp H  | &kp J          | &kp K          | &kp L    | &lt MEDIA SEMI | &kp SQT   |
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp PG_UP | &none     |   | &none     |   | &kp N  | &kp M          | &kp COMMA      | &kp DOT  | &kp FSLH       | &kp RSHFT |
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |        | &mt RCMD MINUS | &mt RALT EQUAL | &kp LBKT | &kp RBKT       | &mo MEDIA |
-|-----------+-----------+---+-----------+---+--------+----------------+----------------+----------+----------------+-----------|
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+|           |           |   | &none      |   | &kp Y  | &kp U          | &kp I          | &kp O    | &kp P          | &kp BSLH  |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp LGUI  | &kp RCTRL |   | &mo ARROWS |   | &kp H  | &kp J          | &kp K          | &kp L    | &lt MEDIA SEMI | &kp SQT   |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp PG_UP | &none     |   | &none      |   | &kp N  | &kp M          | &kp COMMA      | &kp DOT  | &kp FSLH       | &kp RSHFT |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp PG_DN | &kp ENTER |   | &kp SPACE  |   |        | &mt RCMD MINUS | &mt RALT EQUAL | &kp LBKT | &kp RBKT       | &mo MEDIA |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
 
 * Numkey Layer
 
@@ -121,7 +121,7 @@ We are doing an org-src stuff
 * Actual keymap builder
 
 #+NAME: LAYER_BUILDER
-#+begin_src python :var left=DEFAULT_LAYER_L :var right=DEFAULT_LAYER_R :colnames no :results output
+#+begin_src python :var left=ARROWS_LAYER_L :var right=ARROWS_LAYER_R :colnames no :results output
 
 result = []
 for idx, pair in enumerate(zip(left, right)):
@@ -144,11 +144,11 @@ def compare(s1, s2):
 #+end_src
 
 #+RESULTS: LAYER_BUILDER
-: &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5  &kp N6       &mo 3  &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
-: &kp TAB &kp Q &kp W &kp E &kp R &kp T  &none       &none  &kp Y &kp U &kp I &kp O &kp P &kp BSLH
-: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G  &none  &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL  &none  &kp H &kp J &kp K &kp L &lt MEDIA SEMI &kp SQT
-: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &none  &none &kp HOME &none &none &kp PG_UP &none  &none  &kp N &kp M &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-: &mo 2 &kp EQUAL &lt ARROWS DOT &mt LALT LEFT &mt LCMD RIGHT   &kp SPACE  &kp BSPC &kp END &kp PG_DN &kp ENTER  &kp SPACE   &mt RCMD MINUS &mt RALT EQUAL &kp LBKT &kp RBKT &mo 2
+: &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  &kp F6       &mo 3  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp BSPC
+: &kp TAB &kp Q &kp W &kp E &kp R &kp T  &none       &none  &kp UP &kp 7 &kp 8 &kp 9 &kp STAR &kp BSLH
+: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G  &none  &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL  &none  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PLUS &kp SQT
+: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &none  &none &kp HOME &none &none &kp PG_UP &none  &none  &kp AMPS &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &kp FSLH &kp RSHFT
+: &mo 2 &kp EQUAL &trans &mt LALT LEFT &mt LCMD RIGHT   &kp SPACE  &kp BSPC &kp END &kp PG_DN &kp ENTER  &kp SPACE   &kp C_VOL_UP &kp C_VOL_DN &kp K_MUTE &kp RBKT &mo 2
 
 
 #+RESULTS:
