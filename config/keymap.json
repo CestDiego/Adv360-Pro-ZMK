@@ -4,10 +4,10 @@
   "layout": "LAYOUT",
   "layer_names": [
     "base",
-    "keypad",
-    "fn",
-    "mod",
-    "Layer #4"
+    "symbols",
+    "media",
+    "config",
+    "arrows"
   ],
   "layers": [
     [
