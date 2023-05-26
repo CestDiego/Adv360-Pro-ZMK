@@ -10,17 +10,17 @@ We are doing an org-src stuff
 * Default Layer
 
 #+NAME: DEFAULT_LAYER_L
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp GRAVE     | &kp N1    | &kp N2       | &kp N3        | &kp N4         | &kp N5 |   | &kp N6    |   |           |          |
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp TAB       | &kp Q     | &kp W        | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mt LCTRL ESC | &kp A     | &kp S        | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp LSHFT     | &kp Z     | &kp X        | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mo 2         | &kp EQUAL | &lt ARROWS . | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
-|---------------+-----------+--------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp GRAVE     | &kp N1    | &kp N2         | &kp N3        | &kp N4         | &kp N5 |   | &kp N6    |   |           |          |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W          | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S          | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X          | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mo 2         | &kp EQUAL | &lt ARROWS DOT | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
 
 
 #+NAME: DEFAULT_LAYER_R
@@ -96,7 +96,7 @@ We are doing an org-src stuff
 
 * ARROWS Layer
 
-#+NAME: MEDIA_LAYER_L
+#+NAME: ARROWS_LAYER_L
 |---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
 | &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
 |---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
@@ -110,13 +110,13 @@ We are doing an org-src stuff
 |---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
 
 
-#+NAME: MEDIA_LAYER_R
+#+NAME: ARROWS_LAYER_R
 |-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
 |           |           |   | &mo 3     |   | &kp F6   | &kp F7       | &kp F8           | &kp F9     | &kp F10  | &kp BSPC  |
 |-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
 |           |           |   | &none     |   | &kp UP   | &kp 7        | &kp 8            | &kp 9      | &kp STAR | &kp BSLH  |
 |-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp LEFT | &kp DOWN    | &kp UP          | &kp RIGHT | &kp PLUS | &kp SQT   |
+| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp LEFT | &kp DOWN     | &kp UP           | &kp RIGHT  | &kp PLUS | &kp SQT   |
 |-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
 | &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp C_PREV   | &kp C_PLAY_PAUSE | &kp C_NEXT | kp FSLH  | &kp RSHFT |
 |-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
@@ -125,7 +125,7 @@ We are doing an org-src stuff
 * Actual keymap builder
 
 #+NAME: LAYER_BUILDER
-#+begin_src python :var left=DEFAULT_LAYER_L :var right=DEFAULT_LAYER_R :colnames no :results output
+#+begin_src python :var left=ARROWS_LAYER_L :var right=ARROWS_LAYER_R :colnames no :results output
 
 result = []
 for idx, pair in enumerate(zip(left, right)):
@@ -146,6 +146,13 @@ def compare(s1, s2):
 #    print(compare(comparison," ".join(result)))
 
 #+end_src
+
+#+RESULTS: LAYER_BUILDER
+: &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  &kp F6       &mo 3  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp BSPC
+: &kp TAB &kp Q &kp W &kp E &kp R &kp T  &none       &none  &kp UP &kp 7 &kp 8 &kp 9 &kp STAR &kp BSLH
+: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G  &none  &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL  &none  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PLUS &kp SQT
+: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &none  &none &kp HOME &none &none &kp PG_UP &none  &none  &kp AMPS &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT kp FSLH &kp RSHFT
+: &mo 2 &kp EQUAL &trans &mt LALT LEFT &mt LCMD RIGHT   &kp SPACE  &kp BSPC &kp END &kp PG_DN &kp ENTER  &kp SPACE   &kp C_VOL_UP &kp C_VOL_DN &kp K_MUTE &kp RBKT &mo 2
 
 
 #+RESULTS:
