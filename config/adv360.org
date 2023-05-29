@@ -3,158 +3,7 @@
 
 We are doing an org-src stuff
 
-* Default Layer
-
-#+NAME: DEFAULT_LAYER_L
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp GRAVE     | &kp N1    | &kp N2         | &kp N3        | &kp N4         | &kp N5 |   | &kp N6    |   |           |          |
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp TAB       | &kp Q     | &kp W          | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mt LCTRL ESC | &kp A     | &kp S          | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp LSHFT     | &kp Z     | &kp X          | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mo MEDIA    | &kp EQUAL | &lt ARROWS DOT | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
-|---------------+-----------+----------------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-
-
-#+NAME: DEFAULT_LAYER_R
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-|           |           |   | &mo CONFIG |   | &kp N6 | &kp N7         | &kp N8         | &kp N9   | &kp N0         | &kp BSPC  |
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-|           |           |   | &none      |   | &kp Y  | &kp U          | &kp I          | &kp O    | &kp P          | &kp BSLH  |
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &mo ARROWS |   | &kp H  | &kp J          | &kp K          | &kp L    | &lt MEDIA SEMI | &kp SQT   |
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp PG_UP | &none     |   | &none      |   | &kp N  | &kp M          | &kp COMMA      | &kp DOT  | &kp FSLH       | &kp RSHFT |
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-| &kp PG_DN | &kp ENTER |   | &kp SPACE  |   |        | &mt RCMD MINUS | &mt RALT EQUAL | &kp LBKT | &kp RBKT       | &mo MEDIA |
-|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
-
-* Numkey Layer
-
-#+NAME: SYMBOLS_LAYER_L
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &trans        | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-
-
-#+NAME: SYMBOLS_LAYER_R
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-|           |           |   | &mo 3     |   | &kp F6   | &kp F7         | &kp F8    | &kp F9     | &kp F10     | &kp BSPC  |
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-|           |           |   | &none     |   | &kp UP   | &kp KP_N7      | &kp KP_N8 | &kp KP_N9  | &kp STAR    | &kp BSLH  |
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp DOWN | &kp KP_N4      | &kp KP_N5 | &kp KP_N6  | &kp KP_PLUS | &kp SQT   |
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-| &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp KP_N1      | &kp KP_N2 | &kp KP_N3  | &kp FSLH    | &kp RSHFT |
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &mt RCMD MINUS | &kp KP_N0 | &kp KP_DOT | &kp RBKT    | &mo 2     |
-|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
-
-* Media Layer
-
-#+NAME: MEDIA_LAYER_L
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &trans        | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-
-
-#+NAME: MEDIA_LAYER_R
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-|           |           |   | &mo 3     |   | &kp F6   | &kp F7       | &kp F8           | &kp F9     | &kp F10  | &kp BSPC  |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-|           |           |   | &none     |   | &kp UP   | &kp 7        | &kp 8            | &kp 9      | &kp STAR | &kp BSLH  |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp DOWN | &kp 4        | &kp 5            | &kp 6      | &kp PLUS | &kp SQT   |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp C_PREV   | &kp C_PLAY_PAUSE | &kp C_NEXT | &kp FSLH | &kp RSHFT |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &kp C_VOL_UP | &kp C_VOL_DN     | &kp K_MUTE | &kp RBKT | &mo 2     |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-
-* ARROWS Layer
-
-#+NAME: ARROWS_LAYER_L
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-| &mo 2         | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
-|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
-
-
-#+NAME: ARROWS_LAYER_R
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-|           |           |   | &mo 3     |   | &kp F6   | &kp F7       | &kp F8           | &kp F9     | &kp F10  | &kp BSPC  |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-|           |           |   | &none     |   | &kp UP   | &kp 7        | &kp 8            | &kp 9      | &kp STAR | &kp BSLH  |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp LEFT | &kp DOWN     | &kp UP           | &kp RIGHT  | &kp PLUS | &kp SQT   |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp C_PREV   | &kp C_PLAY_PAUSE | &kp C_NEXT | &kp FSLH | &kp RSHFT |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &kp C_VOL_UP | &kp C_VOL_DN     | &kp K_MUTE | &kp RBKT | &mo 2     |
-|-----------+-----------+---+-----------+---+----------+--------------+------------------+------------+----------+-----------|
-* Actual keymap builder
-
-#+NAME: LAYER_BUILDER
-#+begin_src python :var left=ARROWS_LAYER_L :var right=ARROWS_LAYER_R :colnames no :results output
-
-result = []
-for idx, pair in enumerate(zip(left, right)):
-    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else []
-    row = pair[0] + extra_none + pair[1]
-    result.append(' '.join(row))
-
-print("\n".join(result))
-
-import string
-
-def compare(s1, s2):
-    remove = string.punctuation + string.whitespace
-    mapping = {ord(c): None for c in remove}
-    print(f'Mapping: \n{mapping}')
-    return s1.translate(mapping) == s2.translate(mapping)
-
-#    print(compare(comparison," ".join(result)))
-
-#+end_src
-
-#+RESULTS: LAYER_BUILDER
-: &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5  &kp F6       &mo 3  &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp BSPC
-: &kp TAB &kp Q &kp W &kp E &kp R &kp T  &none       &none  &kp UP &kp 7 &kp 8 &kp 9 &kp STAR &kp BSLH
-: &mt LCTRL ESC &kp A &kp S &kp D &kp F &kp G  &none  &kp LCTRL &kp LALT &none &none &kp LGUI &kp RCTRL  &none  &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp PLUS &kp SQT
-: &kp LSHFT &kp Z &kp X &kp C &kp V &kp B  &none  &none &kp HOME &none &none &kp PG_UP &none  &none  &kp AMPS &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &kp FSLH &kp RSHFT
-: &mo 2 &kp EQUAL &trans &mt LALT LEFT &mt LCMD RIGHT   &kp SPACE  &kp BSPC &kp END &kp PG_DN &kp ENTER  &kp SPACE   &kp C_VOL_UP &kp C_VOL_DN &kp K_MUTE &kp RBKT &mo 2
-
-
-#+RESULTS:
-
-
-#+begin_src text :var lefty=DEFAULT_LAYER_R :var righty=DEFAULT_LAYER_L :noweb yes :tangle adv360.keymap.gen
+#+begin_src text :var lefty=DEFAULT_LAYER_R :var righty=DEFAULT_LAYER_L :noweb yes :tangle adv360.keymap
 
 /*
  * Copyright (c) 2020 The ZMK Contributors
@@ -197,13 +46,304 @@ def compare(s1, s2):
 
   keymap {
     compatible = "zmk,keymap";
+#+end_src
+
+* Default Layer
+
+#+NAME: DEFAULT_LAYER_L
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+| &kp GRAVE     | &kp N1    | &kp N2         | &kp N3        | &kp N4         | &kp N5 |   | &kp N6      |   |           |          |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W          | &kp E         | &kp R          | &kp T  |   | &mo SYMBOLS |   |           |          |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S          | &kp D         | &kp F          | &kp G  |   | &none       |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X          | &kp C         | &kp V          | &kp B  |   | &none       |   | &none     | &kp HOME |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+| &mo MEDIA     | &kp EQUAL | &lt ARROWS DOT | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE   |   | &kp BSPC  | &kp END  |
+|---------------+-----------+----------------+---------------+----------------+--------+---+-------------+---+-----------+----------|
+
+
+#+NAME: DEFAULT_LAYER_R
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+|           |           |   | &mo CONFIG |   | &kp N6 | &kp N7         | &kp N8         | &kp N9   | &kp N0         | &kp BSPC  |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+|           |           |   | &none      |   | &kp Y  | &kp U          | &kp I          | &kp O    | &kp P          | &kp BSLH  |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp LGUI  | &kp RCTRL |   | &mo ARROWS |   | &kp H  | &kp J          | &kp K          | &kp L    | &lt MEDIA SEMI | &kp SQT   |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp PG_UP | &none     |   | &none      |   | &kp N  | &kp M          | &kp COMMA      | &kp DOT  | &kp FSLH       | &kp RSHFT |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+| &kp PG_DN | &kp ENTER |   | &kp SPACE  |   |        | &mt RCMD MINUS | &mt RALT EQUAL | &kp LBKT | &kp RBKT       | &mo MEDIA |
+|-----------+-----------+---+------------+---+--------+----------------+----------------+----------+----------------+-----------|
+
+** Keymap Builder
+
+#+NAME: DEFAULT_LAYER_BUILDER
+#+begin_src python :var left=DEFAULT_LAYER_L :var right=DEFAULT_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else [' ', ' ']
+    row = pair[0] + extra_none + pair[1]
+    format_row = "{:^14}" * len(row)
+    print(format_row.format(*row))
+    result.append(' '.join(row))
+
+#    print(compare(comparison," ".join(result)))
+
+#+end_src
+
+#+RESULTS: DEFAULT_LAYER_BUILDER
+:   &kp GRAVE       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                      &kp N6                                                                                                                      &mo CONFIG                    &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp BSPC
+:    &kp TAB        &kp Q         &kp W         &kp E         &kp R         &kp T                    &mo SYMBOLS                                                                                                                      &none                       &kp Y         &kp U         &kp I         &kp O         &kp P        &kp BSLH
+: &mt LCTRL ESC     &kp A         &kp S         &kp D         &kp F         &kp G                       &none                     &kp LCTRL      &kp LALT       &none         &none        &kp LGUI     &kp RCTRL                   &mo ARROWS                    &kp H         &kp J         &kp K         &kp L     &lt MEDIA SEMI   &kp SQT
+:   &kp LSHFT       &kp Z         &kp X         &kp C         &kp V         &kp B                       &none                       &none        &kp HOME       &none         &none       &kp PG_UP       &none                       &none                       &kp N         &kp M       &kp COMMA      &kp DOT       &kp FSLH     &kp RSHFT
+:   &mo MEDIA     &kp EQUAL   &lt ARROWS DOT&mt LALT LEFT &mt LCMD RIGHT                              &kp SPACE                    &kp BSPC      &kp END                                  &kp PG_DN     &kp ENTER                   &kp SPACE                               &mt RCMD MINUS&mt RALT EQUAL   &kp LBKT      &kp RBKT     &mo MEDIA
+
+
+#+begin_src text :var lefty=DEFAULT_LAYER_R :var righty=DEFAULT_LAYER_L :noweb yes :tangle adv360.keymap
     default_layer {
       bindings = <
-        <<LAYER_BUILDER()>>
+        <<DEFAULT_LAYER_BUILDER()>>
         >;
       };
-    };
-  };
+#+end_src
+
+* SYMBOLS LAYER
+
+#+NAME: SYMBOLS_LAYER_L
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &trans        | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+
+
+#+NAME: SYMBOLS_LAYER_R
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+|           |           |   | &mo 3     |   | &kp F6   | &kp F7         | &kp F8    | &kp F9     | &kp F10     | &kp BSPC  |
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+|           |           |   | &none     |   | &kp UP   | &kp KP_N7      | &kp KP_N8 | &kp KP_N9  | &kp STAR    | &kp BSLH  |
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp DOWN | &kp KP_N4      | &kp KP_N5 | &kp KP_N6  | &kp KP_PLUS | &kp SQT   |
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+| &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp KP_N1      | &kp KP_N2 | &kp KP_N3  | &kp FSLH    | &kp RSHFT |
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &mt RCMD MINUS | &kp KP_N0 | &kp KP_DOT | &kp RBKT    | &mo 2     |
+|-----------+-----------+---+-----------+---+----------+----------------+-----------+------------+-------------+-----------|
+
+** Keymap Builder
+
+#+NAME: SYMBOLS_LAYER_BUILDER
+#+begin_src python :var left=SYMBOLS_LAYER_L :var right=SYMBOLS_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else [' ', ' ']
+    row = pair[0] + extra_none + pair[1]
+    format_row = "{:^14}" * len(row)
+    print(format_row.format(*row))
+    result.append(' '.join(row))
+
 #+end_src
 
 #+RESULTS:
+
+
+#+begin_src text :var lefty=SYMBOLS_LAYER_R :var righty=SYMBOLS_LAYER_L :noweb yes :tangle adv360.keymap
+    symbols_layer {
+      bindings = <
+        <<SYMBOLS_LAYER_BUILDER()>>
+        >;
+      };
+#+end_src
+
+* Media Layer
+
+#+NAME: MEDIA_LAYER_L
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &trans        | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+
+
+#+NAME: MEDIA_LAYER_R
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+|           |           |   | &mo 3     |   | &kp F6   | &kp F7       | &kp F8       | &kp F9     | &kp F10  | &kp BSPC  |
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+|           |           |   | &none     |   | &kp UP   | &kp 7        | &kp 8        | &kp 9      | &kp STAR | &kp BSLH  |
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp DOWN | &kp 4        | &kp 5        | &kp 6      | &kp PLUS | &kp SQT   |
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+| &kp PG_UP | &none     |   | &none     |   | &kp AMPS | &kp C_PREV   | &kp C_PP     | &kp C_NEXT | &kp FSLH | &kp RSHFT |
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &kp C_VOL_UP | &kp C_VOL_DN | &kp K_MUTE | &kp RBKT | &mo 2     |
+|-----------+-----------+---+-----------+---+----------+--------------+--------------+------------+----------+-----------|
+
+** Keymap Builder
+
+#+NAME: MEDIA_LAYER_BUILDER
+#+begin_src python :var left=MEDIA_LAYER_L :var right=MEDIA_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else [' ', ' ']
+    row = pair[0] + extra_none + pair[1]
+    format_row = "{:^14}" * len(row)
+    print(format_row.format(*row))
+    result.append(' '.join(row))
+
+#+end_src
+
+#+begin_src text :var lefty=MEDIA_LAYER_R :var righty=MEDIA_LAYER_L :noweb yes :tangle adv360.keymap
+    media_layer {
+      bindings = <
+        <<MEDIA_LAYER_BUILDER()>>
+        >;
+      };
+#+end_src
+
+* MOD Layer
+
+#+NAME: MOD_LAYER_L
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+| &none | &bt BT_SEL 0 | &bt BT_SEL 1 | &bt BT_SEL 2 | &bt BT_SEL 3 | &bt BT_SEL 4 |   | &none                  |   |            |       |
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+| &none | &none        | &kp none     | &none        | &none        | &none        |   | &bootloader            |   |            |       |
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+| &none | &none        | &none        | &none        | &none        | &none        |   | &rgb_ug RGB_MEFS_CMD 5 |   | &bt BT_CLR | &none |
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+| &none | &none        | &none        | &none        | &none        | &none        |   | &none                  |   | &none      | &none |
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+| &none | &none        | &none        | &bl BL_INC   | &bl BL_DEC   |              |   | &rgb_ug RGB_TOG        |   | &bt BL_TOG | &none |
+|-------+--------------+--------------+--------------+--------------+--------------+---+------------------------+---+------------+-------|
+
+
+#+NAME: MOD_LAYER_R
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+|            |            |   | &trans                 |   | &bt BT_SEL 0 | &bt BT_SEL 1 | &bt BT_SEL 2 | &bt BT_SEL 3 | &bt BT_SEL 4 | &none |
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+|            |            |   | &bootloader            |   | &none        | &none        | &none        | &none        | &none        | &none |
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+| &bt BT_CLR | &bt BT_CLR |   | &rgb_ug RGB_MEFS_CMD 5 |   | &none        | &none        | &none        | &none        | &none        | &none |
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+| &none      | &none      |   | &none                  |   | &none        | &none        | &none        | &none        | &none        | &none |
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+| &none      | &none      |   | &rgb_ug RGB_TOG        |   |              | &bl BL_INC   | &bl BL_DEC   | &none        | &none        | &none |
+|------------+------------+---+------------------------+---+--------------+--------------+--------------+--------------+--------------+-------|
+
+** Keymap Builder
+
+#+NAME: MOD_LAYER_BUILDER
+#+begin_src python :var left=MOD_LAYER_L :var right=MOD_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else [' ', ' ']
+    row = pair[0] + extra_none + pair[1]
+    format_row = "{:^22}" * len(row)
+    print(format_row.format(*row))
+    result.append(' '.join(row))
+
+#+end_src
+
+#+RESULTS: MOD_LAYER_BUILDER
+:        &none            &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3        &bt BT_SEL 4                               &none                                                                                                                                                                               &trans                               &bt BT_SEL 0        &bt BT_SEL 1        &bt BT_SEL 2        &bt BT_SEL 3        &bt BT_SEL 4           &none
+:        &none               &none              &kp none             &none               &none               &none                                &bootloader                                                                                                                                                                         &bootloader                                &none               &none               &none               &none               &none               &none
+:        &none               &none               &none               &none               &none               &none                            &rgb_ug RGB_MEFS_CMD 5                         &bt BT_CLR            &none               &none               &none             &bt BT_CLR          &bt BT_CLR                         &rgb_ug RGB_MEFS_CMD 5                           &none               &none               &none               &none               &none               &none
+:        &none               &none               &none               &none               &none               &none                                   &none                                   &none               &none               &none               &none               &none               &none                                   &none                                   &none               &none               &none               &none               &none               &none
+:        &none               &none               &none             &bl BL_INC          &bl BL_DEC                                               &rgb_ug RGB_TOG                            &bt BL_TOG            &none                                                       &none               &none                              &rgb_ug RGB_TOG                                                &bl BL_INC          &bl BL_DEC            &none               &none               &none
+
+#+RESULTS: ARROWS_LAYER_BUILDER
+:   &kp GRAVE       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                      &kp F6                                                                                                                        &mo 3                       &kp F6        &kp F7        &kp F8        &kp F9       &kp F10       &kp BSPC
+:    &kp TAB        &kp Q         &kp W         &kp E         &kp R         &kp T                       &none                                                                                                                         &none                       &kp UP        &kp 7         &kp 8         &kp 9        &kp STAR      &kp BSLH
+: &mt LCTRL ESC     &kp A         &kp S         &kp D         &kp F         &kp G                       &none                     &kp LCTRL      &kp LALT       &none         &none        &kp LGUI     &kp RCTRL                     &none                      &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT      &kp PLUS      &kp SQT
+:   &kp LSHFT       &kp Z         &kp X         &kp C         &kp V         &kp B                       &none                       &none        &kp HOME       &none         &none       &kp PG_UP       &none                       &none                      &kp AMPS     &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT     &kp FSLH     &kp RSHFT
+:     &mo 2       &kp EQUAL       &trans    &mt LALT LEFT &mt LCMD RIGHT                              &kp SPACE                    &kp BSPC      &kp END                                  &kp PG_DN     &kp ENTER                   &kp SPACE                                &kp C_VOL_UP  &kp C_VOL_DN   &kp K_MUTE     &kp RBKT       &mo 2
+
+#+begin_src text :var lefty=MOD_LAYER_R :var righty=MOD_LAYER_L :noweb yes :tangle adv360.keymap
+    mod_layer {
+      bindings = <
+        <<MOD_LAYER_BUILDER()>>
+        >;
+      };
+#+end_src
+* ARROWS Layer
+
+#+NAME: ARROWS_LAYER_L
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp GRAVE     | &kp F1    | &kp F2 | &kp F3        | &kp F4         | &kp F5 |   | &kp F6    |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp TAB       | &kp Q     | &kp W  | &kp E         | &kp R          | &kp T  |   | &none     |   |           |          |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mt LCTRL ESC | &kp A     | &kp S  | &kp D         | &kp F          | &kp G  |   | &none     |   | &kp LCTRL | &kp LALT |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &kp LSHFT     | &kp Z     | &kp X  | &kp C         | &kp V          | &kp B  |   | &none     |   | &none     | &kp HOME |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+| &mo 2         | &kp EQUAL | &trans | &mt LALT LEFT | &mt LCMD RIGHT |        |   | &kp SPACE |   | &kp BSPC  | &kp END  |
+|---------------+-----------+--------+---------------+----------------+--------+---+-----------+---+-----------+----------|
+
+
+#+NAME: ARROWS_LAYER_R
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+|           |           |   | &mo 3     |   | &kp F6   | &kp F7   | &kp F8 | &kp F9    | &kp F10  | &kp BSPC  |
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+|           |           |   | &none     |   | &none    | &none    | &none  | &none     | &kp STAR | &kp BSLH  |
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+| &kp LGUI  | &kp RCTRL |   | &none     |   | &kp LEFT | &kp DOWN | &kp UP | &kp RIGHT | &kp PLUS | &kp SQT   |
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+| &kp PG_UP | &none     |   | &none     |   | &none    | &none    | &none  | &none     | &kp FSLH | &kp RSHFT |
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+| &kp PG_DN | &kp ENTER |   | &kp SPACE |   |          | &none    | &none  | &none     | &kp RBKT | &mo 2     |
+|-----------+-----------+---+-----------+---+----------+----------+--------+-----------+----------+-----------|
+
+** Keymap Builder
+
+#+NAME: ARROWS_LAYER_BUILDER
+#+begin_src python :var left=ARROWS_LAYER_L :var right=ARROWS_LAYER_R :colnames no :results output
+
+result = []
+for idx, pair in enumerate(zip(left, right)):
+    extra_none = ['&none', '&none'] if idx == 3 or idx == 2  else [' ', ' ']
+    row = pair[0] + extra_none + pair[1]
+    format_row = "{:^14}" * len(row)
+    print(format_row.format(*row))
+    result.append(' '.join(row))
+
+#+end_src
+
+#+RESULTS: ARROWS_LAYER_BUILDER
+:   &kp GRAVE       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5                      &kp F6                                                                                                                        &mo 3                       &kp F6        &kp F7        &kp F8        &kp F9       &kp F10       &kp BSPC
+:    &kp TAB        &kp Q         &kp W         &kp E         &kp R         &kp T                       &none                                                                                                                         &none                       &kp UP        &kp 7         &kp 8         &kp 9        &kp STAR      &kp BSLH
+: &mt LCTRL ESC     &kp A         &kp S         &kp D         &kp F         &kp G                       &none                     &kp LCTRL      &kp LALT       &none         &none        &kp LGUI     &kp RCTRL                     &none                      &kp LEFT      &kp DOWN       &kp UP      &kp RIGHT      &kp PLUS      &kp SQT
+:   &kp LSHFT       &kp Z         &kp X         &kp C         &kp V         &kp B                       &none                       &none        &kp HOME       &none         &none       &kp PG_UP       &none                       &none                      &kp AMPS     &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT     &kp FSLH     &kp RSHFT
+:     &mo 2       &kp EQUAL       &trans    &mt LALT LEFT &mt LCMD RIGHT                              &kp SPACE                    &kp BSPC      &kp END                                  &kp PG_DN     &kp ENTER                   &kp SPACE                                &kp C_VOL_UP  &kp C_VOL_DN   &kp K_MUTE     &kp RBKT       &mo 2
+
+#+begin_src text :var lefty=ARROWS_LAYER_R :var righty=ARROWS_LAYER_L :noweb yes :tangle adv360.keymap
+    arrows_layer {
+      bindings = <
+        <<ARROWS_LAYER_BUILDER()>>
+        >;
+      };
+#+end_src
+
+* End
+#+RESULTS:
+#+begin_src text :noweb yes :tangle adv360.keymap
+  };
+};
+#+end_src
