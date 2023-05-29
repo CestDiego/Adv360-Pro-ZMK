@@ -25,9 +25,11 @@ We are doing an org-src stuff
 #include <dt-bindings/zmk/backlight.h>
 
 
-#define BASE 1
-#define SYMBOLS 2
-#define MEDIA 3
+#define DEFAULT 0
+#define SYMBOLS 1
+#define MEDIA 2
+#define CONFIG 3
+#define ARROWS 4
 
 / {
   behaviors {
